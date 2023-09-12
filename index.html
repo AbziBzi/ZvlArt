@@ -3,10 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Barlow Condensed' rel='stylesheet'>
   <title>Zivile Art</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <header class="top-bar">
+    <div class="menu-icon" onclick="toggleMenu()">
+      <!-- Hamburger menu icon (you can use an SVG or an icon font) -->
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <div class="top-bar-items">
+      <a href="index.html" class="top-bar-item">HOME</a>
+      <a href="who_am_i.html" class="top-bar-item">WHO I AM</a>
+      <a href="what_do_i_do.html" class="top-bar-item">WHAT I DO</a>
+    </div>
+  </header>
+
   <div class="side-menu">
     <a href="index.html" class="menu-link">
       <img class="logo" src="assets/side_menu/logo.png" alt="Logo">
@@ -26,5 +41,12 @@
     <span></span>
     <!-- Add more spans for additional images -->
   </div>
+
+  <script>
+    function toggleMenu() {
+      const topBarItems = document.querySelector('.top-bar-items');
+      topBarItems.classList.toggle('active');
+    }
+  </script>
 </body>
 </html>
