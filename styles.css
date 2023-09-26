@@ -84,21 +84,6 @@ body {
   /* You can also add other styling as needed for the logo */
 }
 
-
-/* Media query for screens 768px or less */
-@media screen and (max-width: 768px) {
-  /* Hide side-menu on smaller screens */
-  .side-menu {
-    display: none;
-  }
-
-  /* Display mobile-menu on smaller screens */
-  .top-bar {
-    display: flex;
-    /* Add styles for the mobile menu here */
-  }
-}
-
 .logo {
   width: 80%;
 }
@@ -250,4 +235,35 @@ p {
   font-family: "Barlow Condensed";
   font-size: 1.5em;
   margin-bottom: 1em;
+}
+
+
+/* Media query for screens 768px or less */
+@media screen and (max-width: 768px) {
+  /* Hide side-menu on smaller screens */
+  .side-menu {
+    display: none;
+  }
+
+  /* Display mobile-menu on smaller screens */
+  .top-bar {
+    display: flex;
+    /* Add styles for the mobile menu here */
+  }
+
+  /* Override the styles for .gallery on smaller screens */
+  .gallery {
+    margin-left: 5%; /* Change the left margin to 0 */
+    margin-right: 5%; /* Change the left margin to 0 */
+    column-count: 2; /* Adjust the number of columns */
+    column-gap: 15px; /* Adjust the column gap */
+  }
+
+  /* Override the positioning styles for .text on smaller screens */
+  .text {
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the text precisely */
+    width: 80%; /* Adjust the width as needed for mobile */
+  }
 }
