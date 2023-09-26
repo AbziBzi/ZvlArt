@@ -26,11 +26,11 @@ body {
 .top-bar {
   background-color: #f0eceb;
   display: flex;
-  flex-direction: column; /* Arrange elements vertically */
-  align-items: flex-end; /* Center items horizontally */
-  padding: 10px 20px; /* Adjust padding as needed */
+  flex-direction: row; /* Arrange elements horizontally */
+  align-items: center; /* Center items vertically */
+  padding-left: 20px;
+  padding-right: 20px;
   position: relative;
-  display: none;
 }
 
 /* Styles for the hamburger menu icon */
@@ -54,7 +54,7 @@ body {
 .top-bar-items {
   display: none; /* Initially hide the items */
   position: absolute;
-  top: 40px; /* Adjust the distance from the top as needed */
+  top: 80px; /* Adjust the distance from the top as needed */
   background-color: #f0eceb;
   flex-direction: column;
   align-items: center; /* Center items horizontally */
@@ -72,6 +72,16 @@ body {
   text-align: center; /* Center text horizontally within the items */
   margin-bottom: 10px; /* Adjust the spacing between items */
   width: 100%; /* Set item width to 100% */
+}
+
+/* Styles for the top bar logo */
+.top-bar-logo {
+  margin-right: auto; /* Pushes the logo to the left */
+}
+
+.top-bar-logo img {
+  max-height: 80px; /* Adjust the logo's height as needed */
+  /* You can also add other styling as needed for the logo */
 }
 
 
