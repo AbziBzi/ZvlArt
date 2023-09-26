@@ -201,6 +201,13 @@
       </div>
 
       <script>
+        window.onload = function() {
+            var elements = document.querySelectorAll('.image_preview');
+            Intense(elements);
+        }
+        </script>
+
+      <script>
         function toggleMenu() {
           const topBarItems = document.querySelector('.top-bar-items');
           topBarItems.classList.toggle('active');
