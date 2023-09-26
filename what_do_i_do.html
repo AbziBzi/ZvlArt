@@ -30,17 +30,24 @@
     <div>
 
         <div class="side-menu">
-            <a href="index.html" class="menu-link">
-            <img class="logo" src="assets/side_menu/logo.png" alt="Logo">
-            </a>
-            <a href="who_am_i.html" class="menu-link">
-            <img class="menu-item" src="assets/side_menu/who_am_i.png" alt="Who Am I">
-            </a>
-            <a href="what_do_i_do.html" class="menu-link">
-            <img class="menu-item" src="assets/side_menu/what_do_i_do.png" alt="What Do I Do">
-            </a>
-            <img class="menu-item" src="assets/side_menu/get_in_touch.png" alt="Get In Touch">
-        </div>
+            <div class="menu-items">
+              <a href="index.html" class="menu-link">
+                <img class="logo" src="assets/side_menu/logo.png" alt="Logo">
+              </a>
+              <a href="who_am_i.html" class="menu-link">
+                <img class="menu-item" src="assets/side_menu/who_am_i.png" alt="Who Am I">
+              </a>
+              <a href="what_do_i_do.html" class="menu-link">
+                <img class="menu-item" src="assets/side_menu/what_do_i_do.png" alt="What Do I Do">
+              </a>
+            </div>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/zvl_illustrations/">
+                <img class="menu-item instagram" src="assets/side_menu/instagram_icon.svg" alt="Instagram">
+              </a>
+                <img class="menu-item email" src="assets/side_menu/email_icon.png" alt="Email">
+            </div>
+          </div>
 
         <div class="gallery">
             <figure>
@@ -199,6 +206,27 @@
         </div>
         <script src="scripts.js"></script>
       </div>
+
+      <script>
+        // Get a reference to the image element by its class
+        const emailImage = document.querySelector('.menu-item.email');
+    
+        // Add a click event listener to the image
+        emailImage.addEventListener('click', function() {
+          // Define the recipient email address
+          const recipientEmail = 'zivile.krauzlis@gmail.com';
+    
+          // Define the subject and body of the email (optional)
+          const subject = 'Hello';
+          const body = 'I wanted to send you a message.';
+    
+          // Create the mailto link with recipient, subject, and body
+          const mailtoLink = `mailto:${recipientEmail}?subject=${subject}&body=${body}`;
+    
+          // Open the user's default email client
+          window.location.href = mailtoLink;
+        });
+      </script>
 
       <script>
         window.onload = function() {

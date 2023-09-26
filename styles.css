@@ -22,6 +22,56 @@ body {
   transition: width 0.3s ease;
 }
 
+.logo {
+  width: 80%;
+}
+
+.menu-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.menu-item {
+  width: 80%;
+  height: auto;
+  margin-bottom: 5%;
+}
+
+/* Styles for the menu items container */
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  flex-grow: 1; /* Allow this container to grow and push social icons to the bottom */
+}
+
+/* Styles for the social icons container */
+.social-icons {
+  display: flex;
+  justify-content: center; /* Spacing between Instagram and Twitter icons */
+  width: 80%; /* Adjust the width as needed */
+  margin-bottom: 5px; /* Center the social icons horizontally */
+}
+
+/* Style for the Instagram icon */
+.menu-item.instagram {
+  /* Add styling specific to the Instagram icon, such as width and height */
+  width: auto; /* Adjust the width as needed */
+  height: 40px;
+  margin-right: 25px;
+}
+
+/* Style for the Twitter icon */
+.menu-item.email {
+  /* Add styling specific to the Twitter icon, such as width and height */
+  width: auto; /* Adjust the width as needed */
+  height: 40px;
+}
+
+
 /* Styles for the top bar menu */
 .top-bar {
   background-color: #f0eceb;
@@ -82,23 +132,6 @@ body {
 .top-bar-logo img {
   max-height: 80px; /* Adjust the logo's height as needed */
   /* You can also add other styling as needed for the logo */
-}
-
-.logo {
-  width: 80%;
-}
-
-.menu-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-
-.menu-item {
-  width: 80%;
-  height: auto;
-  margin-bottom: 5%;
 }
 
 
